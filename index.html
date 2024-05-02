@@ -2,43 +2,149 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="reset.css"> 
-    <link rel="stylesheet" href="styles.css"> 
+    <link rel="icon" type="image/png" href="/favicon.png" />
+
     <title>Chris' Portfolio - Home</title>
     <meta charset="utf-8">
+
+    <link rel="stylesheet" href="./libs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./libs/css/preloader.min.css">
 </head>
 
 <body>
-    <header>
-       <h1>Chris' Portfolio</h1>
+    <header class="text-center">
+        <h1>Chris Chapmans Portfolio</h1>
     </header>
     <nav>
-        
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact Details</a></li>
-        </ul>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6 text-center">
+                <input type="radio" class="btn-check" name="options" id="aboutme" value="aboutmeMain" autocomplete="off"
+                    checked>
+                <label class="btn btn-info" for="aboutme">About Me</label>
+
+                <input type="radio" class="btn-check" name="options" id="projects" value="projectsMain"
+                    autocomplete="off">
+                <label class="btn btn-info" for="projects">Projects</label>
+            </div>
+            <div class="col-3"></div>
+        </div>
     </nav>
     <figure>
 
-        
+
     </figure>
     <main>
-        <p>Hi </p><p>My name is Chris and this is my Portfolio</p>
-        <p>I've worked in a couple of different roles that were adjacent to IT development, for instance Developing spreadsheet automation apps in vba for a accounts department, managing incident esclations and user stories.</p>
-        <p>My coding skills include HTML, CSS, Javascript and VBA. I've touched on a few other languages such as python, C# and GameMaker. My latest role had had me focus much more on my soft sklill such as meeting management and managing stakeholders. I'm particularily good at chairing online meetings with large attendences.</p>
-        <p>My hobbies are playing role playing games and board games, DIY, and making bad photoshop art.</p>>
+        <div class="row page" id="aboutmeMain">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col p-1">
+                        <h2>About Me:</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col p-1">Hi
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col p-1">
+                        My name is Chris and this is my Portfolio.
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col p-1">I've worked in a couple of different roles that were adjacent to IT
+                        development, for instance
+                        Developing spreadsheet automation apps in vba for a accounts department, managing
+                        incident
+                        esclations and user stories.
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col p-1">My coding skills include HTML, CSS, Javascript (including Node, React and
+                        Express), Python, PHP
+                        and VBA. I've touched on a few other languages such as C# and GameMaker. My latest role
+                        had had
+                        me focus much more on my soft sklill such as meeting management and managing
+                        stakeholders. I'm
+                        particularily good at chairing online meetings with large attendences.
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col p-1">I'm originally from the Channel Island of Jersey but now reside in
+                        Manchester and am Happily married to my wife Suzi and have a pet hamster. My hobbies are playing
+                        role playing games and board
+                        games, DIY,
+                        and making bad photoshop art.
+                    </div>
+                </div>
 
+            </div>
+            <div class="col-3"></div>
+        </div>
+        <div class="row page" id="projectsMain">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <h2>Projects</h2>
+                <h3>Mixed Messages</h3>
+                <p>The aim of this project was to generate a random phrase. Working with 2 fellow students we came up
+                    with the concept of a animal doing something to another animal. As the 2 other guys had done english
+                    as a foreign language courses one suggested we also includ a phrase showing the same action in the
+                    past tense.</p>
+                <p>I went for a simple style for this project as it was to shwcase the coding. I trried for a
+                    businesslike plain style for the styleing</p>
+                <p><a href="https://masteroffluff.github.io/MixedMessages/">Github Repository</a></p>
+                <p><a href="https://masteroffluff.github.io/MixedMessages/">Deployed Here</a></p>
+                <h3>Jammming</h3>
+                <p> My first project in React and interacting with APIs, this downloads a track listing based on a
+                    search term from Spotify and allows you to build a playlist. It is a demonstration of passing state
+                    through the react component structure using props and callbacks. This was the first time i used
+                    authentication to a third party site. </p>
+                <p>I decided to style it like an old fashioned led matrix car stereo interface.</p>
+                <p><a href="https://github.com/masteroffluff/Jammming">Github Repository</a></p>
+                <a href="'https://preeminent-mooncake-36d241.netlify.app">Deployed Here</a>
+                <!--         <h3>Reddit Browser</h3>
+            <p> This project is a recat site that uses reddits API to display reddit posts. The challenge here was working with large JSON sets and various media types.</p>
+            <a href="'https://preeminent-mooncake-36d241.netlify.app">Link</a> -->
+                <h3>ACME Ecommerce Site</h3>
+                <p> This project is in 2 parts the first is the back end which uses PostgreSQL and OpenAPI Specification
+                    and the front end which uses React with Redux. I am using stripe on both side to handle payment (its
+                    currently set in test mode 😊) I picked the ACME Company from Warner Brothers as my source of
+                    inspriation and the store sells items based on the those that appear in the cartoons. Note: if you
+                    want to try ordering out for yourself i would suggest using credit card number 4242 4242 4242 4242
+                    expiry date:12/34 cvc code :123 and whatever name in the name field.</p>
+                <p>Please note the database for this site is currently suspended. </p>
+                <p><a href="https://github.com/masteroffluff/E-commerce-3">Github Repository</a></p>
+                <a href="'https://acme-eccomerce-client.onrender.com/">Deployed Here</a>
+                <p>(This is deployed of the free version of render and is veeery slow to get started.)</p>
+                <h3>Fluffbook</h3>
+                <p> My final project for the Codecaademy. This is a personal organiser app with some slight social media
+                    elements. I used test based development for the front end which presented some interesing
+                    challenges. I also tried to do more with less libraries and tried to create my own methods for items
+                    such as React Forms.</p>
+                <p><a href='https://github.com/masteroffluff/pern_app'>Github Repository</a></p>
+                <p><a href="'https://preeminent-mooncake-36d241.netlify.app">Deployed Here</a></p>
+            </div>
+            <div class="col-3"></div>
+        </div>
     </main>
-    <footer>
+    <footer class="row">
         <hr>
-        <a href="https://github.com/masteroffluff/">github.com/masteroffluff/</a>
-
+        <div class="col-3"></div>
+        <div class="col-6 text-center">
+            <h3>Contact Details</h3>
+            <a href="mailto:chris.chapman@linuxmail.org">email</a><br>
+            <a href="https://www.linkedin.com/in/chris-chapman-95a0a4189/">LinkedIn</a><br>
+            <a href="https://github.com/masteroffluff/">github.com/masteroffluff/</a>
+        </div>
+        <div class="col-3"></div>
     </footer>
 
 
 </body>
-
+<div id=”preloader”></div>
+<script type="application/javascript" src="./libs/js/bootstrap.min.js"></script>
+<script type="application/javascript" src="./libs/js/jquery-2.2.3.min.js"></script>
+<script type="application/javascript" src="./libs/js/script.js"></script>
 
 </html>
