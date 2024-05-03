@@ -10,7 +10,7 @@ $(document).ready(function () {
     $("#projectsMain").hide();
     $('input[name="options"]').on("click",()=>{
         $(".page").hide();
-        $("#" + $('input[name="options"]:checked').val()).show();
+        $("#" + $('input[name="options"]:checked').val()).slideDown("fast");
     });
 })
 //$('input[name="options"]:checked').val();
